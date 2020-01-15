@@ -18,3 +18,23 @@ In other words, find the difference between the total number of CITY entries in 
 */
 select count(city) - count(distinct city)
 from station;
+
+/*
+5. Query the two cities in STATION with the shortest and longest CITY names, as well as their respective lengths (i.e.: number of characters in the name). 
+If there is more than one smallest or largest city, choose the one that comes first when ordered alphabetically.
+*/
+select c1, l1
+from (select city as c1, length(city) as l1
+      from station
+      order by c1)
+where l1 = (select min(length(city))
+            from station)
+            and rownum < 2;
+            
+select c2, l2 
+from (select city as c2, length(city) as l2
+      from station
+      order by c2)
+where l2 = (select max(length(city))
+           from station)
+           and rownum < 2;
