@@ -38,3 +38,10 @@ from (select city as c2, length(city) as l2
 where l2 = (select max(length(city))
            from station)
            and rownum < 2;
+
+/*
+6. Query the list of CITY names starting with vowels (i.e., a, e, i, o, or u) from STATION. Your result cannot contain duplicates.
+*/
+select distinct city 
+from station 
+where REGEXP_LIKE (lower(city),'^[aeiou]');
