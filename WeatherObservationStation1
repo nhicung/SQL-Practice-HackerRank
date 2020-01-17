@@ -45,3 +45,10 @@ where l2 = (select max(length(city))
 select distinct city 
 from station 
 where REGEXP_LIKE (lower(city),'^[aeiou]');
+
+/*
+7. Query the list of CITY names ending with vowels (a, e, i, o, u) from STATION. Your result cannot contain duplicates.
+*/
+select distinct city 
+from station
+where regexp_like(lower(city),'[aeiou]$');
