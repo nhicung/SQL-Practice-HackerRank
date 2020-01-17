@@ -62,4 +62,8 @@ from station
 where regexp_like(lower(city),'^[aeiou]') and regexp_like(lower(city),'[aeiou]$');
 
 /*
+9. Query the list of CITY names from STATION that do not start with vowels. Your result cannot contain duplicates.
 */
+select distinct city 
+from station 
+where not regexp_like(lower(city), '^[aeiou]');
