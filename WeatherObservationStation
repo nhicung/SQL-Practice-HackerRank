@@ -156,3 +156,12 @@ Query the Euclidean Distance between points P1 and P2 and round it to a scale of
 */
 select round(sqrt(power(max(lat_n)-min(lat_n),2) + power(max(long_w)-min(long_w),2)),4)
 from station
+
+/*
+20. A median is defined as a number separating the higher half of a data set from the lower half. 
+Query the median of the Northern Latitudes (LAT_N) from STATION and round your answer to 4 decimal places.
+*/
+select round(s.lat_n,4)
+from station s
+where (select count(lat_n) from station where lat_n < s.lat_n) = (select count(lat_n) from station where lat_n > s.lat_n)
+
