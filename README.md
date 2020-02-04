@@ -4,8 +4,8 @@ Resource: HackerRank
 | Problems                                | Difficulty | 
 | ----------------------------------------| ---------- |
 
-| [Weather Observation Station](/src/WeatherObservationStation.sql) |  Easy | 
-| [Japan's Cities](/src/Japan'sCities.sql))|
+| [Weather Observation Station](/WeatherObservationStation.sql) |  Easy | 
+| [Japan's Cities](/Japan'sCities.sql)| Easy|
 
 
 This project is licensed under the MIT License
