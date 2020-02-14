@@ -3,8 +3,10 @@ Resource: HackerRank
 
 | Problems                                | Difficulty | Number of questions|
 | ----------------------------------------| ---------- |--------------------|
+| [Employees](/Employees.sql)| Easy | 3 |
 | [Japan's Cities](/Japan'sCities.sql)| Easy | 3 |
-| [Weather Observation Station](/WeatherObservationStation.sql) |  Easy - Medium | 10 |
 | [Type of Triangles](/TypeofTriangles.sql)| Easy | 1 |
+| [Weather Observation Station](/WeatherObservationStation.sql) |  Easy - Medium | 10 |
+
 
 
