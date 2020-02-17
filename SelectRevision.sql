@@ -15,3 +15,10 @@ The CountryCode for America is USA.
 select NAME
 from CITY
 where CountryCode = 'USA' and population > 120000;
+
+/*
+3. Query all columns (attributes) for every row in the CITY table.
+*/
+
+select *
+from city;
