@@ -5,6 +5,7 @@ Resource: HackerRank
 | ----------------------------------------| ---------- |--------------------|
 | [Employees](/Employees.sql)| Easy | 3 |
 | [Japan's Cities](/Japan'sCities.sql)| Easy | 3 |
+| [Select Revision](/SelectRevision.sql)| Easy | 3 |
 | [Type of Triangles](/TypeofTriangles.sql)| Easy | 1 |
 | [Weather Observation Station](/WeatherObservationStation.sql) |  Easy - Medium | 10 |
 
